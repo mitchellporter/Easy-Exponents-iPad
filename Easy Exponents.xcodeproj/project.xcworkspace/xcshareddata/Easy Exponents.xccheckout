@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3D76A67C-AA01-458A-A9A1-B57921815A65</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Easy Exponents</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>28885786-68C0-4C2F-94FF-8B7E6EDAEFEC</key>
+		<string>ssh://github.com/mitchellporter/MMProfitFirst.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Easy Exponents.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>28885786-68C0-4C2F-94FF-8B7E6EDAEFEC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mitchellporter/MMProfitFirst.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>28885786-68C0-4C2F-94FF-8B7E6EDAEFEC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>28885786-68C0-4C2F-94FF-8B7E6EDAEFEC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>develop</string>
+		</dict>
+	</array>
+</dict>
+</plist>
