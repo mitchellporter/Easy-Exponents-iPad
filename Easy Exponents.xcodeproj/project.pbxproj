@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C338E29219B9573900A10B0F /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C338E29019B9573800A10B0F /* CoreData.xcdatamodeld */; };
 		C36318CE199D16D100B8C7C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36318CD199D16D100B8C7C0 /* Images.xcassets */; };
 		C37012D419AEC01900F94FBD /* SAMGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = C37012D319AEC01900F94FBD /* SAMGradientView.m */; };
 		C37012D719AEC02E00F94FBD /* MCSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C37012D619AEC02E00F94FBD /* MCSwipeTableViewCell.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C338E29119B9573900A10B0F /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		C36318CD199D16D100B8C7C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C37012D219AEC01900F94FBD /* SAMGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMGradientView.h; sourceTree = "<group>"; };
 		C37012D319AEC01900F94FBD /* SAMGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMGradientView.m; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				C3B17898199AD8B10031BBB2 /* InfoPlist.strings */,
 				C3B1789B199AD8B10031BBB2 /* main.m */,
 				C3B1789D199AD8B10031BBB2 /* Easy Exponents-Prefix.pch */,
+				C338E29019B9573800A10B0F /* CoreData.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				C3A515E7199AE5AC0013EB0E /* EEThirdTabViewController.m in Sources */,
 				C37012D719AEC02E00F94FBD /* MCSwipeTableViewCell.m in Sources */,
+				C338E29219B9573900A10B0F /* CoreData.xcdatamodeld in Sources */,
 				C3A515EA199AEF150013EB0E /* EECalculator.m in Sources */,
 				C372F822199AE342003180CB /* EESecondTabViewController.m in Sources */,
 				C3B2AEED199BC2AD005C5D9C /* EEChecklistManager.m in Sources */,
@@ -560,6 +564,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C338E29019B9573800A10B0F /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C338E29119B9573900A10B0F /* CoreData.xcdatamodel */,
+			);
+			currentVersion = C338E29119B9573900A10B0F /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C3B17884199AD8B10031BBB2 /* Project object */;
 }
