@@ -22,23 +22,23 @@ static NSString *kSavedSwipedCellRows = @"savedSwipedCellRows";
 #pragma mark - Instance methods
 - (void)saveChecklist
 {
-    if (!self.swipedCellRows) {
-        self.swipedCellRows = [[NSMutableArray alloc]init];
+    if (!self.swipedCellIdNumbers) {
+        self.swipedCellIdNumbers = [[NSMutableArray alloc]init];
     }
 
     NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
-    [standardDefaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.swipedCellRows] forKey:kSavedSwipedCellRows];
+    [standardDefaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.swipedCellIdNumbers] forKey:kSavedSwipedCellRows];
 }
 
 - (void)fetchSavedChecklist
 {
-    if (!self.swipedCellRows) {
-        self.swipedCellRows = [[NSMutableArray alloc]init];
+    if (!self.swipedCellIdNumbers) {
+        self.swipedCellIdNumbers = [[NSMutableArray alloc]init];
     }
     
     NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
     NSData *data = [standardDefaults objectForKey:kSavedSwipedCellRows];
-    self.swipedCellRows = [NSKeyedUnarchiver unarchiveObjectWithData:data];   
+    self.swipedCellIdNumbers = [NSKeyedUnarchiver unarchiveObjectWithData:data];   
 }
 
 @end

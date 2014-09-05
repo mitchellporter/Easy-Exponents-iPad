@@ -53,8 +53,8 @@
     self.checklistManager = [EEChecklistManager sharedMMChecklistManager];
     
     //Make sure the manager's swipedCellRows property exists
-    if (!self.checklistManager.swipedCellRows) {
-        self.checklistManager.swipedCellRows = [[NSMutableArray alloc]init];
+    if (!self.checklistManager.swipedCellIdNumbers) {
+        self.checklistManager.swipedCellIdNumbers = [[NSMutableArray alloc]init];
     }
 }
 
@@ -125,7 +125,7 @@
     
     
     //Set different color for swiped / completed cells
-    if ([self.checklistManager.swipedCellRows containsObject:[NSNumber numberWithInteger:indexPath.row]]) {
+    if ([self.checklistManager.swipedCellIdNumbers containsObject:[NSNumber numberWithInteger:indexPath.row]]) {
         
         
         cell.contentView.backgroundColor = [UIColor colorWithRed:1.000 green:0.310 blue:0.000 alpha:1];
@@ -190,7 +190,7 @@
         
       
         //Add swiped row to swiped rows array
-        [self.checklistManager.swipedCellRows addObject:[NSNumber numberWithInteger:indexPath.row]];
+        [self.checklistManager.swipedCellIdNumbers addObject:[NSNumber numberWithInteger:indexPath.row]];
         
         [self.tableView reloadData];
     }];
