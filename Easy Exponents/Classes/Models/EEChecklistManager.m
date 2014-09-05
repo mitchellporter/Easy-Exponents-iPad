@@ -2,9 +2,6 @@
 #import "EEChecklistManager.h"
 #import "EEAppDelegate.h"
 
-#pragma mark - Static Variables
-static NSString *kSavedSwipedCellRows = @"savedSwipedCellRows";
-
 @implementation EEChecklistManager
 
 #pragma mark - Singleton
@@ -47,8 +44,6 @@ static NSString *kSavedSwipedCellRows = @"savedSwipedCellRows";
         [context save:&error];
         
     }
-
-
 }
 
 - (void)fetchSavedChecklist
@@ -78,8 +73,8 @@ static NSString *kSavedSwipedCellRows = @"savedSwipedCellRows";
         
     } else {
         
-        //Lop through returned objects, create NSNumbers,
-        //and add NSNumbers to swipedCellRows
+        //Loop through returned objects, create NSNumbers,
+        //and add NSNumbers to swipedCellIdNumbers
         for (id object in objects) {
             
             NSManagedObject *managedObject = object;

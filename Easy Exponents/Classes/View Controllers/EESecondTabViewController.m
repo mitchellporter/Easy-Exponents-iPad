@@ -28,17 +28,6 @@
     //Setup gradient background
     [self gradientBackgroundViewSetup];
     
-    NSLog(@"viewdidload");
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:YES];
-    
-    NSLog(@"VDD");
-    //Putting this method in viewDidAppear was the ONLY way
-    //to successfully resize the table view
-    //of this UITableViewController
 }
 
 #pragma mark - Initial Setup Methods
@@ -181,16 +170,13 @@
         default:
             break;
     }
-    //cell.textLabel.text = @"This is a checklist item.";
     cell.textLabel.font = [UIFont fontWithName:@"Avenir" size:27.0f];
     cell.textLabel.textColor = [UIColor whiteColor];
     
     //Adding gestures per state basis.
     [cell setSwipeGestureWithView:checkView color:greenColor mode:MCSwipeTableViewCellModeExit state:MCSwipeTableViewCellState1 completionBlock:^(MCSwipeTableViewCell *cell, MCSwipeTableViewCellState state, MCSwipeTableViewCellMode mode) {
-        NSLog(@"Did swipe \"Checkmark\" cell");
         
-      
-        //Add swiped row to swiped rows array
+        //Add swiped cell's id number to swiped cell id numbers array
         [self.checklistManager.swipedCellIdNumbers addObject:cell.cellIdNumber];
         
         [self.tableView reloadData];
@@ -206,18 +192,5 @@
     imageView.contentMode = UIViewContentModeCenter;
     return imageView;
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-    
+   
 @end
